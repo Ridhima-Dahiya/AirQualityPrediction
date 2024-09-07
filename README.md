@@ -19,3 +19,14 @@ Requisite meteorological parameters include the information related to the wind
 speed, wind direction, temperature, moisture levels etc. The meteorological data was collected through the SoDa “Solar Radiation and Meteorological Data Services” website as it provides access to the meteorological data from MERRA 2 “Modern-Era Retrospective analysis for Research and Applications” web-service delivering time series of meteorological parameters worldwide. The meteorological data for Rohtak since January 2014 to April, 2020 was downloaded in CSV “Comma Separated Values” by filling the details of latitude and longitude of Rohtak which are “28.8699°” and “76.46937°” respectively.
 
 ![image](https://github.com/user-attachments/assets/9c1169f2-41e0-4f11-b0ce-b82c48402868)
+![image](https://github.com/user-attachments/assets/02cd3c58-5324-4ee7-b3dc-a628287ad94a)
+
+# Parameters considered collectively: ![image](https://github.com/user-attachments/assets/baa3fa2a-19f4-454e-922f-19e7561c54d3)
+
+**DATASETS CONSIDERED FOR BUILDING MODELS**
+I have divided the overall data into mini datasets where done the predictions for  individual  air pollutant parameter i.e. “output variable” is done  on the  basis of  previous  air pollutant concentration of the pollutant parameter and the meteorological parameters i.e. “input variables”. Hence, I have a total of 6 datasets for which the models are built.  Sample dataset file for “AQI” pollutant parameter named as “PREVaqi” is shown in figure along with the screenshot containing list of other dataset csv files for which the models are built using code.
+![image](https://github.com/user-attachments/assets/5fa4876a-3ceb-4342-84b1-ef6a97d0eaef)
+
+**EXPERIMENTAL RESULTS**
+I have built a  total of 11 ML models comprising of Linear Regression, BayesianRidge Regression, ARD Regression, DecisionTree Regression, Bagging Regressor, ExtraTrees Regressor, AdaBoost Regressor, Gradient Boosting Regressor, Multi-Layer Perceptron Regressor, Random Forest Regressor and Support Vector Regressor. Each of these models are used to predict air_pollutant parameter present in the 6 datasets used in the study.  
+
